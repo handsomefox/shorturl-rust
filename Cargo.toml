@@ -1,0 +1,20 @@
+[package]
+name = "shorturl-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-files = "0.6.0"
+actix-web = "4.0.1"
+anyhow = "1.0.57"
+base64-url = "1.4.13"
+bson = "2.2.0"
+futures = "0.3.21"
+mongodb = "2.2.1"
+serde = {version="1.0.137", features=["derive"]}
+tokio = "1.18.0"
+
+[profile.dev]
+overflow-checks = false
